@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../src/favicon.ico">
+        <title>Porfolio RgeditV1</title>
+        <meta name="viewport" content="width=device-width"> <!--Adapata el tamaño-->
+        <meta name="description" content="Porfolio de RgeditV1 con todos los programas desarrollados">
+        <meta name="robots" content="index"> <!---SEO-->
+        <meta charset="utf-8">
+
+        <!--CSS ZONE-->
+        <style> /*Estilos para las pagina*/
+            body {
+                color: rgb(193 18 91 / 65%); /* DESPUES DE LA BARRA ES LA OPACIDAD */
+            }
+            h1 {
+                color: rgba(58, 34, 167, 0.941);
+                border-width: 3px;
+                border-style: solid;
+                border-color: rgb(201, 43, 43);
+            }
+            .presentacion { /*asi se invoca una clase en css*/
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #Copyright { /*Asi se invoca un id en css*/
+
+                font-family: sans-serif;
+                color: rgba(26, 60, 56, 0.797);
+            }
+            .title:hover{ /*indica que hara el elemento al pasar el cursor por encima*/
+                color: black;
+                cursor:progress; /*Indica el cursor*/
+            }
+            .list:hover{ /* EL outline es de contorno, lo que hace que no mueva otros elementos si se modifica*/
+                color: darkorchid;
+                outline: 1px solid #000;
+            }
+            .list li:active { /*Con el active es la accion que hara el elemento al hacer click*/
+                color: chocolate;
+                outline:1px dashed #204282;
+            }
+            .list li:nth-child(1){
+                color: brown;
+                border: inherit; /*No se le pondra el borde cuando le haga click*/
+            }
+            
+            .list li:nth-child(2){
+                color:darkkhaki;
+            }
+        </style>
+        <!--CSS ENDLINE-->
+
+    </head>
+    <body>
+        <header> <!--Head of the page-->
+            <h1 class="title">PORTFOLIO DE RGEDITV1</h1>
+            <nav > <!--All Navigations Elements-->
+                <ul class="list">
+                    <li >Home</li>
+                    <li >About Me</li>
+                    <li >Contact</li>
+                </ul> 
+             </nav>
+        </header>        
+        <section>
+            <article class="presentacion">
+                <p>Aqui se encuentra todo tipo de contenido relacionado conmigo
+                    desde mis projectos, programas y las tecnologias que estoy
+                    aprendiendo y que ya por lo menos domino
+                </p>
+            </article>
+        </section>
+        <footer> <!--Page foot-->
+            <div id="Copyright">
+                <h5>COPYRIGHT</h5>
+                <p>all reserved rigths</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
